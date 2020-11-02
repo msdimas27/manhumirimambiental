@@ -1,0 +1,59 @@
+<div id="backdrop-top">
+  <div id="moving-bar"></div>
+</div>
+<div id="backdrop-bottom">
+  <div id="backdrop-content">
+    <div id="filtro">
+      <h1 class="ma-caption mb10">Filtrar por</h1>
+      <ion-buttons slot="secondary">
+        <ion-button
+          *ngFor="let button of botoes" shape="round" size="small" [class]="button.class"
+          (click)="toggleFilter(button.key)"
+          [ngClass]="{disable: !filterState[button.key]}">
+          <span class="ma-buttom">
+            {{ button.name }}
+          </span>
+        </ion-button>
+      </ion-buttons>
+    </div>
+
+    <div class="mb10"></div>
+    <h1 class="ma-caption mb10">Locais mais próximos</h1>
+    <ng-container *ngFor="let loc of locs_prox">
+      <app-location-card [loc]="loc"></app-location-card>
+    </ng-container>
+
+    <div class="mb10"></div>
+    <h1 class="ma-caption mb10">Coleta próxima de você</h1>
+    <app-location-card [loc]="lixeira_prox"></app-location-card>
+
+    <ion-card id="parque-card">
+      <img src="assets/images/PARQUE DO SAGUI.jpg" />
+      <ion-card-header>
+        <ion-card-title>Parque Municipal do Sagui</ion-card-title>
+      </ion-card-header>
+      <ion-card-content style="text-align: justify;">
+        O Parque do Sagui é uma Unidade de Conservação da Natureza incluso na categoria de Unidade de Conservação de domínio público e proteção integral como os demais Parques Nacionais e Estaduais. Está localizado no Córrego da Caatinga, Zona Rural de Manhumirim -MG, com uma altitude média de 1.000 a 1.500 metros em relação ao nível do mar.
+      </ion-card-content>
+      <ion-button expand="block" fill="outline"
+      (click)="toParque()">
+        <span class="ma-buttom">
+          CONHEÇA O PARQUE
+        </span>
+      </ion-button>
+    </ion-card>
+
+    <!-- <div class="curiosidades">
+
+      <h3 class="ma-h3">Você sabia?</h3>
+      <p class="ma-body">
+        A cada 28 toneladas de papel reciclado, evita-se o corte de 1 hectare de floresta
+      </p>
+      <ion-button expand="block" id="curi-button">
+        <span class="ma-buttom">
+          VEJA MAIS CURIOSIDADES
+        </span>
+      </ion-button>
+    </div> -->
+  </div>
+</div>

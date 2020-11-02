@@ -1,0 +1,33 @@
+<ng-container *ngIf="input">
+    <img class="main-media" [src]="input.img_src">
+
+    <div class="content">
+        <h2>{{ input.titulo }}</h2>
+
+        <p class="ma-body2" *ngFor="let texto of input.texto_curto">
+            {{ texto }}
+        </p>
+
+        <ng-container *ngIf="input.texto_longo?.length > 0 && !texto_longo_open">
+            <a class="a-link" (click)="texto_longo_open = true;">Saiba mais...</a>
+        </ng-container>
+
+        <ng-container *ngIf="input.texto_longo && texto_longo_open">
+            <p class="ma-body2" *ngFor="let texto of input.texto_longo">
+                {{ texto }}
+            </p>
+        </ng-container>
+
+        <ng-container *ngIf="input.texto_longo?.length > 0 && texto_longo_open">
+            <a class="a-link" (click)="texto_longo_open = false;">Mostrar menos...</a>
+        </ng-container>
+
+        <div class="mb"></div>
+
+        <h3>{{ input.texto_loc }}</h3>
+
+        <ion-item-group class="mb">
+            <app-location-card *ngFor="let loc of input.locs" [loc]="loc"></app-location-card>
+        </ion-item-group>
+    </div>
+</ng-container>

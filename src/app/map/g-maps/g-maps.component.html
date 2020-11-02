@@ -1,0 +1,19 @@
+<div id="map">
+  <!-- <div style="border:auto;">
+    <h1>finge q aq tem um mapa</h1>
+  </div> -->
+  <agm-map [latitude]="lat" [zoom]="zoom" [longitude]="lng" [styles]="mapStyle" [disableDefaultUI]="true">
+    <agm-marker  [latitude]="marker_lat" [longitude]="marker_lng"></agm-marker>
+    <ng-container *ngFor="let loc of lista_locais">
+      <agm-marker
+        *ngIf="filterState[loc.key]"
+        [latitude]="loc.latitude"
+        [longitude]="loc.longitude"
+        [iconUrl]="getMarkerIcon(loc.key)"
+        (markerClick)="markerClick(loc)">
+      </agm-marker>
+    </ng-container>
+  </agm-map>
+</div>
+
+

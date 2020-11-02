@@ -1,0 +1,33 @@
+/* Edu theme scss for Manhumirim ambiental*/
+
+@import "colors.scss";
+@import "typography.scss";
+@import "ionic-tags.scss";
+
+h1 {
+    @extend .ma-h1;
+}
+
+h2 {
+    @extend .ma-h2;
+}
+
+h3 {
+    @extend .ma-h3;
+}
+
+h4 {
+    @extend .ma-h4;
+}
+
+h5 {
+    @extend .ma-h5;
+}
+
+h6 {
+    @extend .ma-h6;
+}
+
+html {
+    @extend .ma-body2;
+}

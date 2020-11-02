@@ -1,0 +1,164 @@
+ion-content {
+  --background: #236326;
+}
+
+.back-arrow {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+.back-arrow ion-icon {
+  font-size: 24px;
+}
+
+.titulo {
+  width: calc((320 / 360) * 100vw);
+  margin: calc((40 / 640) * 100vh) auto calc((30 / 640) * 100vh) auto;
+  height: 32px;
+  /* H1 */
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 34px;
+  /* or 100% */
+  text-align: center;
+  letter-spacing: -1.2px;
+  /* Branco */
+  color: #ffffff;
+}
+
+.subtitulo {
+  width: calc((320 / 360) * 100vw);
+  margin: 0px auto calc((10 / 640) * 100vh) auto;
+  height: 24px;
+  /* H2 */
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  /* identical to box height, or 100% */
+  text-align: center;
+  letter-spacing: -0.5px;
+  /* Branco */
+  color: #ffffff;
+}
+
+.jogadores {
+  margin: 0px auto calc((20 / 640) * 100vh) auto;
+  width: calc((320 / 360) * 100vw);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.jogadores .info-jogador {
+  display: inline-block;
+  width: calc((140 / 360) * 100vw);
+  padding: calc((10 / 640) * 100vh) calc((5 / 360) * 100vw);
+  background: rgba(255, 239, 95, 0.13);
+  border-radius: 15px;
+}
+.jogadores .info-jogador .avatar {
+  width: calc((85 / 360) * 100vw);
+  height: calc((85 / 360) * 100vw);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background: #fff6c8;
+  display: block;
+  margin: 0px auto calc((8 / 640) * 100vh) auto;
+  border-radius: 50%;
+  border: solid calc((1 / 360) * 100vw) white;
+}
+.jogadores .info-jogador .avatar .avatar-img {
+  display: block;
+  padding-top: calc((5 / 360) * 100vw);
+  background-color: transparent;
+  margin-top: auto;
+  height: 100%;
+  width: 100%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+.jogadores .info-jogador .nome {
+  margin: 0px auto calc((8 / 640) * 100vh) auto;
+  display: block;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+.jogadores .info-jogador ion-button.btn {
+  margin: 0px auto;
+  display: block;
+  --background: #FCC13D;
+  --border-radius: 100px;
+  --box-shadow: 0px 5px 0px #E39F08;
+}
+.jogadores .X {
+  display: inline-block;
+  /* X */
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+}
+
+.card-regras {
+  width: calc((320 / 360) * 100vw);
+  margin: 0px auto calc((20 / 640) * 100vh) auto;
+  padding: calc((15 / 360) * 100vw);
+  background: #ffffff;
+  border-radius: 15px;
+}
+.card-regras span {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  color: #333333;
+}
+.card-regras .texto {
+  width: calc((320 / 360) * 100vw);
+  margin: 0px auto calc((0 / 640) * 100vh) auto;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  color: #333333;
+  white-space: pre-line;
+}
+
+.chamada {
+  width: calc((320 / 360) * 100vw);
+  margin: 0px auto calc((20 / 640) * 100vh) auto;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+}
+
+ion-button.btn-jogar {
+  width: calc((320 / 360) * 100vw);
+  margin: 0px auto calc((0 / 640) * 100vh) auto;
+  display: block;
+  --background: #FCC13D;
+  --border-radius: 100px;
+  --box-shadow: 0px 5px 0px #E39F08;
+}

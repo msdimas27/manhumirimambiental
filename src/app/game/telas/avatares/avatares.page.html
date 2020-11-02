@@ -1,0 +1,29 @@
+<ion-content>
+
+  <div class="container">
+
+    <div class="top-bar">
+      <a [routerLink]="['/game', 'novo-jogo']">
+        <ion-icon src="assets/game/arrow_back.svg"></ion-icon>
+      </a>
+      <ion-button (click)="clickSalvar()">SALVAR</ion-button>
+    </div>
+  
+    <div class="player-box">
+      <div class="avatar">
+        <img class="avatar-img" [src]="avatarSrc(selected_avatar)" alt="avatar" />
+      </div>
+      <ion-input placeholder="Digite seu nome" [(ngModel)]="name"></ion-input>
+    </div>
+  
+    <div class="avatar-grid">
+      <div class="avatar-box" *ngFor="let avatar of avatares" (click)="clickAvatar(avatar)">
+        <div class="avatar">
+          <img class="avatar-img" [src]="avatarSrc(avatar)" alt="avatar" />
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</ion-content>

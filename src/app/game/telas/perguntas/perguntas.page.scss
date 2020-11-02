@@ -1,0 +1,173 @@
+@import "../../game.page.scss";
+
+ion-content {
+    --background: #236326;
+}
+
+.content {
+    padding: calcH(30) calcW(20);
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.info {
+
+    width: 100%;
+
+    .info-jogador {
+        width: calcW(155);
+        height: calcH(60);
+        
+        background: #1E5121;
+        border-radius: 10px;
+        margin-bottom: calcH(14);
+
+        &.deactive {
+            opacity: 0.5;
+        }
+    
+        .avatar {
+            width: calcW(44);
+            height: calcW(44);
+            
+            margin: calcH(8) calcW(6);
+            padding: 4px 0px 0px 0px;
+            border-radius: 50%;
+            background: #fff6c8;
+            float: left;
+            
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+
+            .avatar-img {
+                display: block;
+                padding-top: 5%;
+                background-color: transparent;
+                margin-top: auto;
+                height: 100%;
+                width: 100%;
+                border-radius: 50%;
+            }
+        }
+
+        .info-jogo {
+
+            float: left;
+            margin: calcH(8) 0px;
+
+            p {
+                margin: 0px;
+
+                &+p {
+                    margin-top: 1px;
+                }
+            }
+
+            .nome {
+                color: #FFFFFF;
+            }
+
+            .pts {
+                font-family: Rubik;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 10px;
+                line-height: 16px;
+                
+                letter-spacing: 1.5px;
+                text-transform: uppercase;
+                
+                color: #FFFFFF;
+            }
+
+            .turno {
+                font-family: Rubik;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 16px;
+
+                letter-spacing: 1.25px;
+                text-transform: uppercase;
+
+                color: #FCC13D;
+            }
+        }
+    }
+}
+
+ion-card.card-pergunta {
+    width: 100%;
+    box-sizing: border-box;
+    margin: calcH(14) 0px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 5px #333333;
+
+    .img-pergunta {
+        height: calcH(135);
+        object-fit: contain;
+        background-color: #FFFFFF;
+    }
+
+    ion-card-content {
+        background-color: #FFFFFF;
+
+        span {
+            display: block;
+            text-align: center;
+        }
+    }
+}
+
+@keyframes alert {
+    0% { color: #FCC13D; }
+    50% { color: red; }
+    100% { color: #FCC13D }
+}
+
+.bar {
+
+    .num-pergunta {
+        color: #FFFFFF;
+        margin-bottom: calcH(14);
+    }
+    
+    .cronometro {
+        color: #FCC13D;
+        margin-bottom: calcH(14);
+
+        &.time-finish {
+            animation: alert 0.4s linear infinite;
+        }
+    }
+}
+
+.alternativas {
+
+    ion-button.btn-resposta {
+        width: 100%;
+        min-height: calcH(50);
+        white-space: normal;
+        --border-radius: 100px;
+        --background: #005B87;
+        --box-shadow: 0px 5px 0px #002B3F;
+
+        &.wrong-answer {
+            --background: #E04444;
+            --box-shadow: 0px 5px 0px #A32323;
+        }
+
+        &.right-answer {
+            --background: #77BC2F;
+            --box-shadow: 0px 5px 0px #447016;
+        }
+    }
+    
+}

@@ -1,0 +1,143 @@
+ion-content {
+  --background: #236326;
+}
+
+.content {
+  padding: calc((30 / 640) * 100vh) calc((20 / 360) * 100vw);
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+.info {
+  width: 100%;
+}
+.info .info-jogador {
+  width: calc((155 / 360) * 100vw);
+  height: calc((60 / 640) * 100vh);
+  background: #1E5121;
+  border-radius: 10px;
+  margin-bottom: calc((14 / 640) * 100vh);
+}
+.info .info-jogador.deactive {
+  opacity: 0.5;
+}
+.info .info-jogador .avatar {
+  width: calc((44 / 360) * 100vw);
+  height: calc((44 / 360) * 100vw);
+  margin: calc((8 / 640) * 100vh) calc((6 / 360) * 100vw);
+  padding: 4px 0px 0px 0px;
+  border-radius: 50%;
+  background: #fff6c8;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.info .info-jogador .avatar .avatar-img {
+  display: block;
+  padding-top: 5%;
+  background-color: transparent;
+  margin-top: auto;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+.info .info-jogador .info-jogo {
+  float: left;
+  margin: calc((8 / 640) * 100vh) 0px;
+}
+.info .info-jogador .info-jogo p {
+  margin: 0px;
+}
+.info .info-jogador .info-jogo p + p {
+  margin-top: 1px;
+}
+.info .info-jogador .info-jogo .nome {
+  color: #FFFFFF;
+}
+.info .info-jogador .info-jogo .pts {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 16px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.info .info-jogador .info-jogo .turno {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  color: #FCC13D;
+}
+
+ion-card.card-pergunta {
+  width: 100%;
+  box-sizing: border-box;
+  margin: calc((14 / 640) * 100vh) 0px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 5px #333333;
+}
+ion-card.card-pergunta .img-pergunta {
+  height: calc((135 / 640) * 100vh);
+  object-fit: contain;
+  background-color: #FFFFFF;
+}
+ion-card.card-pergunta ion-card-content {
+  background-color: #FFFFFF;
+}
+ion-card.card-pergunta ion-card-content span {
+  display: block;
+  text-align: center;
+}
+
+@keyframes alert {
+  0% {
+    color: #FCC13D;
+  }
+  50% {
+    color: red;
+  }
+  100% {
+    color: #FCC13D;
+  }
+}
+.bar .num-pergunta {
+  color: #FFFFFF;
+  margin-bottom: calc((14 / 640) * 100vh);
+}
+.bar .cronometro {
+  color: #FCC13D;
+  margin-bottom: calc((14 / 640) * 100vh);
+}
+.bar .cronometro.time-finish {
+  animation: alert 0.4s linear infinite;
+}
+
+.alternativas ion-button.btn-resposta {
+  width: 100%;
+  min-height: calc((50 / 640) * 100vh);
+  white-space: normal;
+  --border-radius: 100px;
+  --background: #005B87;
+  --box-shadow: 0px 5px 0px #002B3F;
+}
+.alternativas ion-button.btn-resposta.wrong-answer {
+  --background: #E04444;
+  --box-shadow: 0px 5px 0px #A32323;
+}
+.alternativas ion-button.btn-resposta.right-answer {
+  --background: #77BC2F;
+  --box-shadow: 0px 5px 0px #447016;
+}

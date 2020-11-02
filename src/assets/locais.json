@@ -1,0 +1,157 @@
+{
+    "lixeiras": [
+        {
+          "nome": "LIXEIRA 1",
+          "latitude": -20.347363,
+          "longitude": -41.966904
+        },
+        {
+          "nome": "LIXEIRA 2",
+          "latitude": -20.350597,
+          "longitude": -41.956757
+        },
+        {
+          "nome": "LIXEIRA 3",
+          "latitude": -20.35021,
+          "longitude": -41.952534
+        },
+        {
+          "nome": "LIXEIRA 4",
+          "latitude": -20.349558,
+          "longitude": -41.949485
+        },
+        {
+          "nome": "LIXEIRA 5",
+          "latitude": -20.349087,
+          "longitude": -41.951023
+        },
+        {
+          "nome": "LIXEIRA 6",
+          "latitude": -20.363991,
+          "longitude": -41.959335
+        },
+        {
+          "nome": "LIXEIRA 7",
+          "latitude": -20.364089,
+          "longitude": -41.958932
+        },
+        {
+          "nome": "LIXEIRA 8",
+          "latitude": -20.358672,
+          "longitude": -41.959906
+        },
+        {
+          "nome": "LIXEIRA 9",
+          "latitude": -20.360225,
+          "longitude": -41.960219
+        },
+        {
+          "nome": "LIXEIRA 10",
+          "latitude": -20.357084,
+          "longitude": -41.959318
+        },
+        {
+          "nome": "LIXEIRA 11",
+          "latitude": -20.356773,
+          "longitude": -41.958806
+        },
+        {
+          "nome": "LIXEIRA 12",
+          "latitude": -20.35577,
+          "longitude": -41.958668
+        },
+        {
+          "nome": "LIXEIRA 13",
+          "latitude": -20.355244,
+          "longitude": -41.959057
+        },
+        {
+          "nome": "LIXEIRA 14",
+          "latitude": -20.353271,
+          "longitude": -41.95905
+        },
+        {
+          "nome": "LIXEIRA 15",
+          "latitude": -20.350423,
+          "longitude": -41.955849
+        }
+       ],
+    "pracas": [
+        {
+          "nome": "MARCELO IRINEU",
+          "latitude": -20.372919,
+          "longitude": -41.960188
+        },
+        {
+          "nome": "DA BÍBLIA",
+          "latitude": -20.364107,
+          "longitude": -41.959252
+        },
+        {
+          "nome": "GETÚLIO VARGAS",
+          "latitude": -20.357696,
+          "longitude": -41.95753
+        },
+        {
+          "nome": "DONA ZICA CHAVES",
+          "latitude": -20.357774,
+          "longitude": -41.957554
+        },
+        {
+          "nome": "MARISA FULLY COELHO",
+          "latitude": -20.350526,
+          "longitude": -41.958962
+        },
+        {
+          "nome": "PADRE JULIO MARIA",
+          "latitude": -20.357873,
+          "longitude": -41.959749
+        },
+        {
+          "nome": "DOS TRABALHADORES",
+          "latitude": -20.350021,
+          "longitude": -41.950918
+        },
+        {
+          "nome": "BENEDITO VALADARES",
+          "latitude": -20.356414,
+          "longitude": -41.951878
+        },
+        {
+          "nome": "DOM ANTONIO FELIPE CUNHA",
+          "latitude": -20.357145,
+          "longitude": -41.951653
+        },
+        {
+          "nome": "NICOLAU BRACKS",
+          "latitude": -20.356507,
+          "longitude": -41.953306
+        },
+        {
+          "nome": "ALAIR DIAS",
+          "latitude": -20.361587,
+          "longitude": -41.959321
+        }
+       ],
+    "cooperativa": [
+        {
+          "nome": "COOPERATIVA AGUAPÉ",
+          "latitude": -20.350681,
+          "longitude": -41.967407
+        }
+       ],
+    "parque": [
+        {
+          "nome": "PARQUE DO SAGUI",
+          "latitude": -20.356003,
+          "longitude": -42.011786
+        }
+       ],
+    "pilhas": [
+        {
+          "nome": "AGÊNCIA DOS CORREIOS",
+          "latitude": -20.360382,
+          "longitude": -41.96092
+        }
+       ]
+}

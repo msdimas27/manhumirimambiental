@@ -1,0 +1,52 @@
+<ion-content>
+
+    <a [routerLink]="['/game/apresentacao']" class="back-arrow">
+        <ion-icon src="assets/game/arrow_back.svg"></ion-icon>
+    </a>
+
+    <h1 class="titulo">
+        NOVO JOGO
+    </h1>
+
+    <h1 class="subtitulo">
+        Jogadores
+    </h1>
+
+    <div class="jogadores">
+        <div class="info-jogador">
+            <div class="avatar">
+                <img class="avatar-img" [src]="jogadores[0].url" />
+            </div>
+            <h1 class="nome">{{jogadores[0].name}}</h1>
+            <ion-button class="btn" [routerLink]="['/game', 'avatares', 0]">EDITAR</ion-button>
+        </div>
+
+        <ng-container *ngIf="num_jogadores === 2">
+            <div class="X">X</div>
+
+            <div class="info-jogador">
+                <div class="avatar">
+                    <img class="avatar-img" [src]="jogadores[1].url" />
+                </div>
+                <h1 class="nome">{{jogadores[1].name}}</h1>
+                <ion-button class="btn" [routerLink]="['/game', 'avatares', 1]">EDITAR</ion-button>
+            </div>
+        </ng-container>
+    </div>
+
+    <div class="card-regras">
+        <div class="texto">
+            <span>Regras</span><br />
+            <p>{{
+            '1. Cada turno um jogador responde.\n' +
+            '2. Apenas uma resposta é correta.\n' +
+            '3. Quem acertar mais ao final vence.'
+        }}</p>
+        </div>
+    </div>
+
+    <h1 class="chamada">Preparados? Vamos lá</h1>
+
+    <ion-button [routerLink]="['/game', 'perguntas', 0]" class="btn-jogar">JOGAR</ion-button>
+
+</ion-content>

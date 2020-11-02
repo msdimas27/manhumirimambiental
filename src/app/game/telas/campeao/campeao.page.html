@@ -1,0 +1,51 @@
+<ion-content>
+  <div class="campeao">
+
+    <h1 class="titulo">FIM DO JOGO</h1>
+    <h1 class="subtitulo">Parabéns!</h1>
+
+    <ng-container *ngIf="!empate; else empate_template">
+      <div class="avatar-borda">
+        <div class="avatar">
+          <img class="avatar-img" [src]="jogadores[jogador_campeao].url" />
+        </div>
+        <div class="trofeu-ouro"></div>
+      </div>
+
+      <h2 class="nome">
+        {{ jogadores[jogador_campeao].name }}
+      </h2>
+    </ng-container>
+
+    <ng-template #empate_template>
+      <div class="empate">
+        <h1 class="titulo">EMPATE!</h1>
+      </div>
+    </ng-template>
+
+    <div class="placar">
+      <div class="inner-content">
+        <h3>
+          <span class="start">{{ jogadores[jogador_campeao].name }}</span>
+          <span class="end">{{ pontuacao[jogador_campeao] }} PTS</span>
+        </h3>
+        <ng-container *ngIf="!solo">
+          <br>
+          <h3>
+            <span class="start">{{ jogadores[1 - jogador_campeao].name }}</span>
+            <span class="end">{{ pontuacao[1 - jogador_campeao] }} PTS</span>
+          </h3>
+        </ng-container>
+      </div>
+    </div>
+
+    <ion-button class="btn-newgame" [routerLink]="['/game', 'apresentacao']">
+      <h3>JOGAR NOVAMENTE</h3>
+    </ion-button>
+
+    <ion-button fill="outline" class="btn-backapp ma-buttom" [routerLink]="['/home']">
+      VOLTAR AO APLICATIVO
+    </ion-button>
+
+  </div>
+</ion-content>

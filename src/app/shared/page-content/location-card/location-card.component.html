@@ -1,0 +1,9 @@
+<ion-item (click)="click($event)" >
+  <ion-icon slot="start" [src]="getIcon()"></ion-icon>
+  <div>
+    <ion-label>{{ loc?.nome | titlecase }}</ion-label>
+    <div class="mb10"></div>
+    <ion-label class="subtext">{{ (loc?.dist.toFixed(0) | number: '1.0') || '-' }}m de distância.</ion-label>
+  </div>
+  <ion-icon slot="end" src="assets/icon/chevron_right.svg"></ion-icon>
+</ion-item>

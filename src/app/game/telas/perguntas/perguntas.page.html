@@ -1,0 +1,71 @@
+<ion-content>
+  <div class="content">
+
+    <div class="info">
+      
+      <div class="info-jogador left"
+        [ngClass]="{'deactive': !firstActive}">
+
+        <div class="avatar">
+          <img [src]="jogadores[0].url" class="avatar-img">
+        </div>
+        <div class="info-jogo">
+
+          <p class="ma-body nome">{{ jogadores[0].name }}</p>
+          <p class="pts">{{ pontuacao[0] }} PTS</p>
+          <p class="turno" *ngIf="!solo && firstActive"> SUA VEZ </p>
+
+        </div>
+
+      </div>
+
+      <div class="info-jogador right"
+        *ngIf="!solo"
+        [ngClass]="{'deactive': firstActive}">
+
+        <div class="avatar">
+          <img [src]="jogadores[1].url" class="avatar-img">
+        </div>
+        <div class="info-jogo">
+
+          <p class="ma-body nome">{{ jogadores[1].name }}</p>
+          <p class="pts">{{ pontuacao[1] }} PTS</p>
+          <p class="turno" *ngIf="!firstActive"> SUA VEZ </p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <ion-card class=card-pergunta>
+      
+      <img class="img-pergunta" [src]="perguntas[idPergunta].imagem">
+      <ion-card-content classs="ma-body">
+        {{ perguntas[idPergunta].texto }}
+        <br/>
+        <span>Imagem: {{ perguntas[idPergunta].descImg }}</span>
+      </ion-card-content>
+
+    </ion-card>
+
+    <div class="bar">
+      <div class="ma-body2 num-pergunta left">
+        Pergunta {{ setPad(idPergunta + 1) }} / {{perguntas.length}}</div>
+      <div class="ma-body2 cronometro right"
+      [ngClass]="{'time-finish': !tempoRestante}"
+      >
+        00:{{ setPad(tempoRestante) }}
+      </div>
+    </div>
+
+    <div class="alternativas">
+      <ion-button
+        *ngFor="let alt of perguntas[idPergunta].alternativas"
+        class="btn-resposta"
+        (click)="selectAlternativa(alt)"
+        [ngClass]="{'wrong-answer': !tempoRestante && !alt.correta,'right-answer': !tempoRestante && alt.correta}"
+        >{{ alt.texto }}</ion-button>
+    </div>
+
+  </div>
+</ion-content>

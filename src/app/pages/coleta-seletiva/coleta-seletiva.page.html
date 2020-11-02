@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref='/home'></ion-back-button>
+    </ion-buttons>
+    <ion-title>Coleta Seletiva</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-tabs>
+    <ion-tab-bar slot="top">
+      <ion-tab-button tab="cooperativa-coleta">
+        <ion-label>Cooperativa de coleta</ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="dias-horarios">
+        <ion-label>Dias e Horários</ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="pontos-entrega">
+        <ion-label>Pontos de Entrega</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-content>
+
+<router-outlet></router-outlet>

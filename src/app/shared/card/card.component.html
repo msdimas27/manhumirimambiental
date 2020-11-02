@@ -1,0 +1,19 @@
+<ion-card>
+  <div style="float: left">
+    <ion-item>
+      <ion-icon  [name]="icon" size="large"></ion-icon>
+    </ion-item>
+  </div>
+  <div style="float: left;">
+    <ion-card-header>
+      
+      <ion-card-title *ngIf="titulo">
+        {{ titulo }}
+      </ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      {{ texto }}
+    </ion-card-content>
+  </div>
+</ion-card>

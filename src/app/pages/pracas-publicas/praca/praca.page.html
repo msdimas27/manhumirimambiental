@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref='/praca-publica'></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ capitalize(desc?.titulo || '')  }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <app-page-content [input]="input"></app-page-content>
+</ion-content>

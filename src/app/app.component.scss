@@ -1,0 +1,10 @@
+@import "src/theme/edu-theme.scss";
+
+#bottom-list {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+
+    // border-top: solid 1px var(--ma-colors-primary-dark);
+    border-top: solid 1px $primary-dark;
+}

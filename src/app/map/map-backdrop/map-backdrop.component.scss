@@ -1,0 +1,114 @@
+#backdrop-top {
+    box-sizing: border-box;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: #FFFFFF;
+    padding: 15px;
+    position: sticky;
+    top: 0px;
+    // padding-bottom: 20px;
+    z-index: 1000;
+    box-shadow: 0px 10px 10px white;
+
+    div#moving-bar {
+        position: absolute;
+        height: 5px;
+        left: 43.06%;
+        right: 43.06%;
+        margin: auto;
+    
+        background: #C4C4C4;
+        border-radius: 10px;
+    }
+}
+
+#backdrop-bottom {
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+    padding: 10px;
+    // padding-top: 10px;
+
+    margin-bottom: -40px;
+
+    div#backdrop-content {
+        background-color: #FFFFFF;
+    }
+}
+
+.pevs-button{
+    --background: #6B89B6;
+}
+
+.cooperativa-button {
+    --background: #C0AB60;
+}
+
+.pracas-button {
+    --background: #48A99D;
+}
+
+.lixeiras-button {
+    --background: #937C9D;
+}
+
+.parque-button {
+    --background: #94B64C;
+}
+
+#backdrop-content {
+    ion-buttons {
+        overflow-x: auto;
+        white-space: nowrap;
+        
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        ion-button {
+            &.disable {
+                opacity: 0.4;
+            }
+        }
+    }
+}
+
+#curi-button {
+    --background: #1E9623;
+    --border-radius: 7px;
+
+    span {
+        color: #FFFFFF;
+    }
+}
+
+
+.curiosidades {
+    box-shadow: none !important;
+}
+
+
+ion-card#parque-card {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 200px;
+    }
+
+    ion-card-content {
+        color: #666666;
+    }
+
+    ion-button {
+        --background: #FFFFFF;
+        --border-radius: 7px;
+        --border-color: #1E9623;
+        span {
+            color: #1E9623;
+        }
+    }
+}

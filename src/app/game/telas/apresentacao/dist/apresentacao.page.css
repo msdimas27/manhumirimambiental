@@ -1,0 +1,63 @@
+ion-content {
+  /* Secondary-Light */
+  --background: #43B448;
+  width: 100%;
+  height: 100%;
+}
+
+ion-icon {
+  font-size: 24px;
+  margin: 16px 0px 16px 16px;
+}
+
+.titulo-principal {
+  margin: 0px auto calc((20 / 640) * 100vh) auto;
+  width: calc((320 / 360) * 100vw);
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 34px;
+  /* identical to box height, or 85% */
+  text-align: center;
+  letter-spacing: -1.2px;
+  /* Branco */
+  color: #FFFFFF;
+}
+
+.subtitulo {
+  margin: 0px auto calc((10 / 640) * 100vh) auto;
+  width: calc((320 / 360) * 100vw);
+  /* Subtitle 2 */
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 15px;
+  /* or 107% */
+  text-align: center;
+  letter-spacing: 0.1px;
+  /* Branco */
+  color: #FFFFFF;
+}
+
+.img-apresentacao {
+  margin: 0px auto calc((20 / 640) * 100vh) auto;
+  display: block;
+  width: calc((320 / 360) * 100vw);
+}
+
+ion-button {
+  display: block;
+  width: calc((320 / 360) * 100vw);
+  height: calc((50 / 640) * 100vh);
+  margin: 0px auto;
+  --background: #FCC13D;
+  --border-radius: 100px;
+  margin-bottom: calc((10 / 640) * 100vh);
+  --box-shadow: 0px 5px 0px #E39F08;
+}
+ion-button h3 {
+  color: #FFFFFF;
+  text-align: center;
+}

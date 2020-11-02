@@ -1,0 +1,40 @@
+<!-- <ion-fab-button color="primary">
+  <ion-icon name="search"></ion-icon>
+</ion-fab-button> -->
+
+<div class="info-window" *ngIf="info_window_active">
+
+    <ion-card>
+      <ion-icon id="close-button" name="close" (click)="close()"></ion-icon>
+
+      <ion-item>
+        <ion-icon *ngIf="icon_url" class="main-icon" [src]="icon_url" slot="start"></ion-icon>
+        <div>
+          <ion-card-header>
+            <ion-card-title>{{ titulo }}</ion-card-title>
+            <div class="mb10"></div>
+            <ion-card-subtitle>{{ subtitulo }}</ion-card-subtitle>
+            <ion-card-subtitle>{{ distancia | number: '1.0' }}m de distância</ion-card-subtitle>
+          </ion-card-header>
+        </div>
+      </ion-item>
+
+      <ion-card-content *ngIf="texto_curto">
+        {{ texto_curto }}
+      </ion-card-content>
+
+      <ion-item class="buttons">
+
+        <ion-button expand="block" class="ma-button" (click)="navigate()">
+          SAIBA MAIS
+        </ion-button>
+        <!-- <ion-button expand="block" class="ma-button" fill="outline" (click)="toMaps()">
+          <ion-icon name="pin"></ion-icon>
+          ROTAS
+        </ion-button> -->
+
+      </ion-item>
+
+    </ion-card>
+
+</div>

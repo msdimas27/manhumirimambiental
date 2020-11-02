@@ -1,0 +1,8 @@
+{
+  "appId": "io.ionic.manhumirim_ambiental",
+  "appName": "ma",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "cordova": {}
+}

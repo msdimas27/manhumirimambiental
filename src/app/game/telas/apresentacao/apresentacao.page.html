@@ -1,0 +1,27 @@
+<ion-content>
+
+  <a [routerLink]="['/home']">
+    <ion-icon src="assets/game/arrow_back.svg"></ion-icon>
+  </a>
+  
+  <h1 class="titulo-principal">QUIZ AMBIENTAL</h1>
+  
+  <h1 class="subtitulo">Desafie seus amigos e descubra quem sabe tudo sobre meio ambiente, reciclagem e Manhumirim!</h1>
+  
+  <img class="img-apresentacao" src="assets/game/apresentacao.svg"/>
+  
+  <ion-button
+    [routerLink]="['/game', 'novo-jogo']"
+    (click)="click(1)"
+    >
+    <h3>1 jogador</h3>
+  </ion-button>
+
+  <ion-button
+    [routerLink]="['/game', 'novo-jogo']"
+    (click)="click(2)"
+    >
+    <h3>2 jogador</h3>
+  </ion-button>
+  
+</ion-content>

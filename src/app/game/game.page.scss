@@ -1,0 +1,11 @@
+@function calcW($n) {
+    $result: calc((#{$n} / 360) * 100vw);
+    @return $result;
+}
+
+@function calcH($n) {
+    $result: calc((#{$n} / 640) * 100vh);
+    @return $result
+}
+
+$global-width: calcW(320);
